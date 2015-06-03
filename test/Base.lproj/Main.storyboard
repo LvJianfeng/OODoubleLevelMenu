@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gW0-Hd-bQb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fq3-2q-Eyz">
+                                        <rect key="frame" x="202" y="22" width="91" height="30"/>
+                                        <state key="normal" title="添加">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tap2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xs2-Zu-7kU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0B-uc-vum">
+                                        <rect key="frame" x="22" y="22" width="112" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="Ukz-Zx-MUB"/>
+                                        </constraints>
+                                        <state key="normal" title="移除">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tap1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h1r-fN-AYd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fq3-2q-Eyz" firstAttribute="top" secondItem="gW0-Hd-bQb" secondAttribute="topMargin" constant="14" id="NNe-gj-Uzc"/>
+                                    <constraint firstItem="a0B-uc-vum" firstAttribute="leading" secondItem="gW0-Hd-bQb" secondAttribute="leading" constant="22" id="R9U-tH-3ui"/>
+                                    <constraint firstAttribute="trailing" secondItem="fq3-2q-Eyz" secondAttribute="trailing" constant="27" id="YAC-ra-fbP"/>
+                                    <constraint firstItem="fq3-2q-Eyz" firstAttribute="leading" secondItem="a0B-uc-vum" secondAttribute="trailing" constant="68" id="cEc-SA-hCz"/>
+                                    <constraint firstItem="fq3-2q-Eyz" firstAttribute="baseline" secondItem="a0B-uc-vum" secondAttribute="baseline" id="sjq-b1-Oh1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gW0-Hd-bQb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9mr-af-J3k"/>
+                            <constraint firstItem="gW0-Hd-bQb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="EfJ-4L-eAm"/>
+                            <constraint firstAttribute="trailing" secondItem="gW0-Hd-bQb" secondAttribute="trailing" id="iRM-nX-UxL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gW0-Hd-bQb" secondAttribute="bottom" constant="494" id="kaG-MU-0n6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="406"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
