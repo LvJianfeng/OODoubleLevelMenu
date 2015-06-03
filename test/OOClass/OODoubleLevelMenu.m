@@ -148,7 +148,6 @@
         areaCell.areaNameLabel.textColor = self.leftUnSelectColor;
         areaCell.backgroundColor = self.leftUnSelectBackgroundColor;
     }
-   
 }
 
 #pragma mark setter
